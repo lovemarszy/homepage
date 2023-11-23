@@ -36,7 +36,7 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['img.aozaki.cc'],
+    domains: ['image.loveur.life'],
     unoptimized: true,
   },
 
@@ -48,16 +48,16 @@ const nextConfig = {
   ...(process.env.CF_PAGES === 'true'
     ? { output: 'export' } // Use static output for Cloudflare Pages
     : {
-        // Security Headers
-        async headers() {
-          return [
-            {
-              source: '/(.*)',
-              headers: securityHeaders,
-            },
-          ]
-        },
-      }),
+      // Security Headers
+      async headers() {
+        return [
+          {
+            source: '/(.*)',
+            headers: securityHeaders,
+          },
+        ]
+      },
+    }),
 }
 
 module.exports = nextConfig
