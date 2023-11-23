@@ -1,0 +1,22 @@
+{
+  "github": {
+    "silent": true
+  },
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "https://blog.loveur.life/",
+      "statusCode": 308
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/Marszy_Official",
+      "statusCode": 308
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/lovemarszy",
+      "statusCode": 308
+    }
+  ]
+}
