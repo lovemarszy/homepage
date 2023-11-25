@@ -8,14 +8,9 @@ import {
   faFilm,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
-import {
-  faTwitter,
-  faGithub,
-  faDiscord,
-  faTelegram,
-} from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub, faDiscord, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
-import Avatar from '#images/avatar.jpg'
+import Avatar from '#images/avatar.webp'
 
 const Main = () => {
   return (
@@ -28,7 +23,7 @@ const Main = () => {
           width={120}
           height={120}
           placeholder="blur"
-        // priority
+          // priority
         />
       </div>
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Marszy ]</h1>
@@ -93,7 +88,8 @@ const Main = () => {
         </p>
 
         <p className="mt-3 md:mt-8">
-          <FontAwesomeIcon icon={faEnvelope} /> <Link href="mailto:marszy@loveur.life">@Marszy</Link>
+          <FontAwesomeIcon icon={faEnvelope} />{' '}
+          <Link href="mailto:marszy@loveur.life">@Marszy</Link>
         </p>
       </div>
     </div>
