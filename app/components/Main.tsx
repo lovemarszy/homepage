@@ -36,7 +36,6 @@ const Main = () => {
         </p>
 
         <p className="">
-          s
           <FontAwesomeIcon icon={faNewspaper} />{' '}
           <Link href="https://blog.loveur.life/" className="">
             Blog
