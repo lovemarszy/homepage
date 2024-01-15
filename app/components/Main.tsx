@@ -27,11 +27,10 @@ const Main = () => {
         />
       </div>
       <h1 className="mb-6 text-3xl font-bold text-zinc-200 md:mb-8 md:text-4xl">[ Marszy ]</h1>
-
-      {/* Introduction Words */}
+      {/* Introduction Words */}s
       <div className="bg-[#2d2e36]">
         <p className="mb-3 break-words md:mb-8">
-          <FontAwesomeIcon icon={faFilm} /> Cinephile / <FontAwesomeIcon icon={faLightbulb} />{' '}
+          <FontAwesomeIcon icon={faFilm} /> Cinephiles / <FontAwesomeIcon icon={faLightbulb} />{' '}
           Idealist / <FontAwesomeIcon icon={faBookOpen} /> Reader
         </p>
 
@@ -62,7 +61,6 @@ const Main = () => {
           </Link>
         </p>
       </div>
-
       {/* Social Links */}
       <div className="bg-[#2d2e36] text-center">
         <p className="mt-3 md:mt-8">
