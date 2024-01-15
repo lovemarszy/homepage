@@ -1,0 +1,7 @@
+# Ignore artifacts:
+.next
+.github
+.contentlayer
+pnpm-lock.yaml
+
+.turbo
