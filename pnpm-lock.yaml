@@ -22,17 +22,17 @@ overrides:
 
 dependencies:
   '@fortawesome/fontawesome-svg-core':
-    specifier: ^6.5.1
-    version: 6.5.1
+    specifier: ^6.7.2
+    version: 6.7.2
   '@fortawesome/free-brands-svg-icons':
-    specifier: ^6.5.1
-    version: 6.5.1
+    specifier: ^6.7.2
+    version: 6.7.2
   '@fortawesome/free-solid-svg-icons':
-    specifier: ^6.5.1
-    version: 6.5.1
+    specifier: ^6.7.2
+    version: 6.7.2
   '@fortawesome/react-fontawesome':
-    specifier: ^0.2.0
-    version: 0.2.0(@fortawesome/fontawesome-svg-core@6.5.1)(react@18.2.0)
+    specifier: ^0.2.2
+    version: 0.2.2(@fortawesome/fontawesome-svg-core@6.7.2)(react@18.2.0)
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.33)
@@ -125,7 +125,7 @@ packages:
     resolution: {integrity: sha512-ZX/etZEZw8DR7zAB1eVQT40lNo0jeqpb6dCgOvctB6FIQ5PoXfMuNY8+ayQfu8tNQbAB8gQWSSJupR8NxeiZXw==}
     requiresBuild: true
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
     optional: true
 
@@ -166,43 +166,39 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fortawesome/fontawesome-common-types@6.5.1:
-    resolution: {integrity: sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==}
+  /@fortawesome/fontawesome-common-types@6.7.2:
+    resolution: {integrity: sha512-Zs+YeHUC5fkt7Mg1l6XTniei3k4bwG/yo3iFUtZWd/pMx9g3fdvkSK9E0FOC+++phXOka78uJcYb8JaFkW52Xg==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dev: false
 
-  /@fortawesome/fontawesome-svg-core@6.5.1:
-    resolution: {integrity: sha512-MfRCYlQPXoLlpem+egxjfkEuP9UQswTrlCOsknus/NcMoblTH2g0jPrapbcIb04KGA7E2GZxbAccGZfWoYgsrQ==}
+  /@fortawesome/fontawesome-svg-core@6.7.2:
+    resolution: {integrity: sha512-yxtOBWDrdi5DD5o1pmVdq3WMCvnobT0LU6R8RyyVXPvFRd2o79/0NCuQoCjNTeZz9EzA9xS3JxNWfv54RIHFEA==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.5.1
+      '@fortawesome/fontawesome-common-types': 6.7.2
     dev: false
 
-  /@fortawesome/free-brands-svg-icons@6.5.1:
-    resolution: {integrity: sha512-093l7DAkx0aEtBq66Sf19MgoZewv1zeY9/4C7vSKPO4qMwEsW/2VYTUTpBtLwfb9T2R73tXaRDPmE4UqLCYHfg==}
+  /@fortawesome/free-brands-svg-icons@6.7.2:
+    resolution: {integrity: sha512-zu0evbcRTgjKfrr77/2XX+bU+kuGfjm0LbajJHVIgBWNIDzrhpRxiCPNT8DW5AdmSsq7Mcf9D1bH0aSeSUSM+Q==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.5.1
+      '@fortawesome/fontawesome-common-types': 6.7.2
     dev: false
 
-  /@fortawesome/free-solid-svg-icons@6.5.1:
-    resolution: {integrity: sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==}
+  /@fortawesome/free-solid-svg-icons@6.7.2:
+    resolution: {integrity: sha512-GsBrnOzU8uj0LECDfD5zomZJIjrPhIlWU82AHwa2s40FKH+kcxQaBvBo3Z4TxyZHIyX8XTDxsyA33/Vx9eFuQA==}
     engines: {node: '>=6'}
-    requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.5.1
+      '@fortawesome/fontawesome-common-types': 6.7.2
     dev: false
 
-  /@fortawesome/react-fontawesome@0.2.0(@fortawesome/fontawesome-svg-core@6.5.1)(react@18.2.0):
-    resolution: {integrity: sha512-uHg75Rb/XORTtVt7OS9WoK8uM276Ufi7gCzshVWkUJbHhh3svsUUeqXerrM96Wm7fRiDzfKRwSoahhMIkGAYHw==}
+  /@fortawesome/react-fontawesome@0.2.2(@fortawesome/fontawesome-svg-core@6.7.2)(react@18.2.0):
+    resolution: {integrity: sha512-EnkrprPNqI6SXJl//m29hpaNzOp1bruISWaOiRtkMi/xSvHJlzc2j2JAYS7egxt/EbjSNV/k6Xy0AQI6vB2+1g==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       react: '>=16.3'
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 6.5.1
+      '@fortawesome/fontawesome-svg-core': 6.7.2
       prop-types: 15.8.1
       react: 18.2.0
     dev: false
@@ -566,39 +562,39 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.16.0
 
-  /@nolyfill/array-includes@1.0.24:
-    resolution: {integrity: sha512-4vnalzvzxhffSjyRVlmYJo1wqTCL5jesG94CeER4bwUx/S7sCtInHEZ3fncnt+MYMX+53BbSPOQT8Oz3NmdGig==}
+  /@nolyfill/array-includes@1.0.44:
+    resolution: {integrity: sha512-IVEqpEgFbLaU0hUoMwJYXNSdi6lq+FxHdxd8xTKDLxh8k6u5YNGz4Bo6bT46l7p0x8PbJmHViBtngqhvE528fA==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/array.prototype.findlastindex@1.0.24:
-    resolution: {integrity: sha512-UhPUzrObJnaFB94ywGz818q9KLbgffieqKfkG/5kL9j7VS+ikC4gG2jo8/i4zqgvJT3ppHb9buEQ3RRg7fZg8Q==}
+  /@nolyfill/array.prototype.findlastindex@1.0.44:
+    resolution: {integrity: sha512-BLeHS3SulsR3iFxxETL9q21lArV2KS7lh2wcUnhue1ppx19xah1W7MdFxepyeGbM3Umk9S90snfboXAds5HkTg==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/array.prototype.flat@1.0.24:
-    resolution: {integrity: sha512-RCD+BTf2JXc2SexkTOVm7ELYfQRmJjfdHBavuWaE715QP8zvv5zh4hpFqS7jZpDZWC4bTCpmiuDS3CmEepKrLA==}
+  /@nolyfill/array.prototype.flat@1.0.44:
+    resolution: {integrity: sha512-HnOqOT4te0l+XU9UKhy3ry+pc+ZRNsUJFR7omMEtjXf4+dq6oXmIBk7vR35+hSTk4ldjwm/27jwV3ZIGp3l4IQ==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/array.prototype.flatmap@1.0.24:
-    resolution: {integrity: sha512-OH6aQ70QztI/5apHKaMWehcBPgxNy5dWGPlWNUSoD6BfG0u1XdOxtFOjqAruQnU+mbxr6eHA9OMAkHUvxTyl0Q==}
+  /@nolyfill/array.prototype.flatmap@1.0.44:
+    resolution: {integrity: sha512-P6OsaEUrpBJ9NdNekFDQVM9LOFHPDKSJzwOWRBaC6LqREX+4lkZT2Q+to78R6aG6atuOQsxBVqPjMGCKjWdvyQ==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/array.prototype.tosorted@1.0.24:
-    resolution: {integrity: sha512-lVo8TVDqaslOaOvEH7iL7glu/WdlX7ZrB+7FZY4BL25hg8TLHvg3e9pxafCp8vAQ96IOL+tdgBdfeoC7qLeQYg==}
+  /@nolyfill/array.prototype.tosorted@1.0.44:
+    resolution: {integrity: sha512-orF3SWnIhoinCPrMW7XwpoDBccRfF6tXKzcMKlG3AQQmVzRanOYBj7/s1yy6KAQPWker4H1Ih281/GT7y/QXSA==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
   /@nolyfill/es-iterator-helpers@1.0.21:
@@ -608,61 +604,61 @@ packages:
       '@nolyfill/shared': 1.0.21
     dev: true
 
-  /@nolyfill/object.assign@1.0.24:
-    resolution: {integrity: sha512-s1UPaJu730s6WWct5+NZVCDxu3OXM74ZvWxfnluNp89Rha92xDn5QpRqtHolB2WsTXBwQJDqZV72Jhr1gPTIbw==}
+  /@nolyfill/object.assign@1.0.44:
+    resolution: {integrity: sha512-cZoXq09YZXDgkxRMAP/TTb3kAsWm7p5OyBugWDe4fOfxf0XRI55mgDSkuyq41sV1qW1zVC5aSsKEh1hQo1KOvA==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/object.entries@1.0.24:
-    resolution: {integrity: sha512-im+bDIpHCgshjKasOEyHpQNE34xMtQMyV6ECLtkOTwZ0RX4OleSKSreogVbOyo5ocLR7PoscmdM8TQRpVQSVpQ==}
+  /@nolyfill/object.entries@1.0.44:
+    resolution: {integrity: sha512-RCxO6EH9YbvxQWGYLKOd7MjNi7vKzPkXv1VDWNsy1C8BksQxXNPQrddlu3INi1O2fexk82WXpCCeaCtpU/y21w==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/object.fromentries@1.0.24:
-    resolution: {integrity: sha512-nl9e2bebvirv0XE70hdHlHrqXE0Kjwp8BsyHkazOSUM/3Y3YQfcEEIrtf402bdu/jYew4EApcMd8iO4ODyrDcw==}
+  /@nolyfill/object.fromentries@1.0.44:
+    resolution: {integrity: sha512-/LrsCtpLmByZ6GwP/NeXULSgMyNsVr5d6FlgQy1HZatAiBc8c+WZ1VmFkK19ZLXCNNXBedXDultrp0x4Nz+QQw==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/object.groupby@1.0.24:
-    resolution: {integrity: sha512-1PYpcT9MfPB4WRoZMUhuOrXNplTiqob7t5RKUYRh+yJm1Y8lSaDWKw2EUIJDthPbjB+UMpo75nKxdbXhRms5SQ==}
+  /@nolyfill/object.groupby@1.0.44:
+    resolution: {integrity: sha512-jCt/8pN+10mlbeg0ZESpVVaqn5qqpv6kpjM+GDfEP7cXGDSPlIjtvfYWRZK4k4Gftkhhgqkzvcrr8z1wuNO1TQ==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/object.hasown@1.0.24:
-    resolution: {integrity: sha512-eTcdfpLttdOMPH8RGUrkKW7pS5qV3sYYDDQ7r5WpidD8QYn6WzAlQnGczuDC10kFxgQjzYpiI7UY8r63GS6wtQ==}
+  /@nolyfill/object.hasown@1.0.44:
+    resolution: {integrity: sha512-7jKje+48xfxSjw2/g+JA4lOaF9mD7KkLlkXqTpCd+4HqAoVIi0KGYtYzQFuvURY/z2UFAlTzfY80EDlDJs3/Zg==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
-  /@nolyfill/object.values@1.0.24:
-    resolution: {integrity: sha512-FEbvgDQUGDdWZmXHvg8DhKzI9LM3jclZKVmkIx5ZMs3xLb37Sh/c6VG56pmObrHZjwISlDs4cHouVYRsFzwLZw==}
+  /@nolyfill/object.values@1.0.44:
+    resolution: {integrity: sha512-bwIpVzFMudUC0ofnvdSDB/OyGUizcU+r32ZZ0QTMbN03gUttMtdCFDekuSYT0XGFgufTQyZ4ONBnAeb3DFCPGQ==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
   /@nolyfill/shared@1.0.21:
     resolution: {integrity: sha512-qDc/NoaFU23E0hhiDPeUrvWzTXIPE+RbvRQtRWSeHHNmCIgYI9HS1jKzNYNJxv4jvZ/1VmM3L6rNVxbj+LBMNA==}
     dev: true
 
-  /@nolyfill/shared@1.0.24:
-    resolution: {integrity: sha512-TGCpg3k5N7jj9AgU/1xFw9K1g4AC1vEE5ZFkW77oPNNLzprxT17PvFaNr/lr3BkkT5fJ5LNMntaTIq+pyWaeEA==}
+  /@nolyfill/shared@1.0.44:
+    resolution: {integrity: sha512-NI1zxDh4LYL7PYlKKCwojjuc5CEZslywrOTKBNyodjmWjRiZ4AlCMs3Gp+zDoPQPNkYCSQp/luNojHmJWWfCbw==}
     dev: true
 
-  /@nolyfill/string.prototype.matchall@1.0.24:
-    resolution: {integrity: sha512-SkuI/OiXNBKGakbtRsuaLHTrKbf+wNWNCACk+6116dqwmVXOg1O+XzjZRqFuzS1ml5gEJ0XTkaST89LXuevv1g==}
+  /@nolyfill/string.prototype.matchall@1.0.44:
+    resolution: {integrity: sha512-/lwVUaDPCeopUL6XPz2B2ZwaQeIbctP8YxNIyCxunxVKWhCAhii+w0ourNK7JedyGIcM+DaXZTeRlcbgEWaZig==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.44
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
@@ -1353,10 +1349,10 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/parser': 6.18.0(eslint@8.56.0)(typescript@5.3.3)
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.findlastindex: /@nolyfill/array.prototype.findlastindex@1.0.24
-      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.44
+      array.prototype.findlastindex: /@nolyfill/array.prototype.findlastindex@1.0.44
+      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.44
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.44
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 8.56.0
@@ -1366,9 +1362,9 @@ packages:
       is-core-module: 2.13.1
       is-glob: 4.0.3
       minimatch: 3.1.2
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
-      object.groupby: /@nolyfill/object.groupby@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      object.fromentries: /@nolyfill/object.fromentries@1.0.44
+      object.groupby: /@nolyfill/object.groupby@1.0.44
+      object.values: /@nolyfill/object.values@1.0.44
       semver: 6.3.1
       tsconfig-paths: 3.15.0
     transitivePeerDependencies:
@@ -1385,8 +1381,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.7
       aria-query: 5.3.0
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.44
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.44
       ast-types-flow: 0.0.8
       axe-core: 4.7.0
       axobject-query: 3.2.1
@@ -1398,8 +1394,8 @@ packages:
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
       minimatch: 3.1.2
-      object.entries: /@nolyfill/object.entries@1.0.24
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
+      object.entries: /@nolyfill/object.entries@1.0.44
+      object.fromentries: /@nolyfill/object.fromentries@1.0.44
     dev: true
 
   /eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.0):
@@ -1438,23 +1434,23 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
-      array.prototype.tosorted: /@nolyfill/array.prototype.tosorted@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.44
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.44
+      array.prototype.tosorted: /@nolyfill/array.prototype.tosorted@1.0.44
       doctrine: 2.1.0
       es-iterator-helpers: /@nolyfill/es-iterator-helpers@1.0.21
       eslint: 8.56.0
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
       minimatch: 3.1.2
-      object.entries: /@nolyfill/object.entries@1.0.24
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
-      object.hasown: /@nolyfill/object.hasown@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      object.entries: /@nolyfill/object.entries@1.0.44
+      object.fromentries: /@nolyfill/object.fromentries@1.0.44
+      object.hasown: /@nolyfill/object.hasown@1.0.44
+      object.values: /@nolyfill/object.values@1.0.44
       prop-types: 15.8.1
       resolve: 2.0.0-next.5
       semver: 6.3.1
-      string.prototype.matchall: /@nolyfill/string.prototype.matchall@1.0.24
+      string.prototype.matchall: /@nolyfill/string.prototype.matchall@1.0.44
     dev: true
 
   /eslint-scope@7.2.2:
@@ -1911,10 +1907,10 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
     dependencies:
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.24
-      object.assign: /@nolyfill/object.assign@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.44
+      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.44
+      object.assign: /@nolyfill/object.assign@1.0.44
+      object.values: /@nolyfill/object.values@1.0.44
     dev: true
 
   /keyv@4.5.4:
@@ -2828,6 +2824,12 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+
+  /tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
