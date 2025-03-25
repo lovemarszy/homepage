@@ -30,7 +30,7 @@ const Main = () => {
       {/* Introduction Words */}
       <div className="bg-[#F5F5F7]">
         <p className="mb-3 break-words text-[#606060] md:mb-8">
-          <FontAwesomeIcon icon={faFilm} /> Cinephiles / <FontAwesomeIcon icon={faLightbulb} />{' '}
+          <FontAwesomeIcon icon={faFilm} /> Cinephile / <FontAwesomeIcon icon={faLightbulb} />{' '}
           Idealist / <FontAwesomeIcon icon={faBookOpen} /> Reader
         </p>
 
