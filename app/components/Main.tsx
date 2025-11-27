@@ -31,7 +31,7 @@ const Main = () => {
       <div className="bg-[#F5F5F7]">
         <p className="mb-3 break-words text-[#606060] md:mb-8">
           <FontAwesomeIcon icon={faFilm} /> Cinephile / <FontAwesomeIcon icon={faLightbulb} />{' '}
-          Idealist / <FontAwesomeIcon icon={faBookOpen} /> Reader
+          Idealist / <FontAwesomeIcon icon={faBookOpen} /> Bibliophile
         </p>
 
         <p className="">
