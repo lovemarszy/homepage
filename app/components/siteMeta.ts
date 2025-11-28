@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 
 const Site = 'Marszy'
 const Description = "Marszy's Profile"
@@ -7,15 +7,8 @@ const CanonicalUrl = 'https://loveur.life'
 
 export const SiteMeta: Metadata = {
   metadataBase: new URL(CanonicalUrl),
-
-  /* No index */
-  // robots: 'noindex',
-
-  /* Base */
   title: Site,
   description: Description,
-
-  /* OpenGraph */
   openGraph: {
     title: Site,
     siteName: Site,
@@ -24,28 +17,25 @@ export const SiteMeta: Metadata = {
     type: 'website',
     url: CanonicalUrl,
   },
-
-  /* Twitter */
   twitter: {
     site: '@Marszy_Official',
+    card: 'summary_large_image',
   },
-
   applicationName: Site,
-
   icons: {
     icon: [{ url: '/favicon.ico' }, new URL('/favicon.ico', CanonicalUrl)],
     shortcut: ['/android-chrome-192x192.png'],
     apple: [
       { url: '/apple-touch-icon.png' },
-      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
-    ],
-    other: [
-      {
-        rel: 'apple-touch-icon-precomposed',
-        url: '/apple-touch-icon.png',
-      },
     ],
   },
+}
 
-  // themeColor: '#111729',
+export const SiteViewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F5F5F7' },
+    { media: '(prefers-color-scheme: dark)', color: '#0d1117' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
 }

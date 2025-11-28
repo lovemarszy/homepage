@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-
-  a,
-  Link {
-    @apply border-b border-zinc-300/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90;
+  a, Link {
+    @apply border-b border-zinc-300/50 dark:border-zinc-700/50 text-inherit no-underline transition-all duration-100 hover:border-zinc-400/90 dark:hover:border-zinc-500;
   }
-
-  p,
-  li {
-    @apply overflow-hidden overflow-ellipsis leading-7 text-zinc-300/90;
+  p, li {
+    @apply overflow-hidden overflow-ellipsis leading-7 text-zinc-600 dark:text-zinc-400;
   }
+}
+
+.dotback2 {
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+.dark .dotback2 {
+  background-image: radial-gradient(#1f2937 1px, transparent 1px);
 }

@@ -1,10 +1,14 @@
-import { SiteMeta } from './components/siteMeta'
-
+import { SiteMeta, SiteViewport } from './components/siteMeta' // 👈 引入 Viewport
 import './globals.css'
+import Footer from './components/Footer'
+import { Providers } from './components/Providers' // 👈 引入 Provider
+
+// 修复 FontAwesome
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
 
 import { Overpass } from 'next/font/google'
-
 const overpass = Overpass({
   subsets: ['latin'],
   variable: '--font-overpass',
@@ -13,12 +17,16 @@ const overpass = Overpass({
 })
 
 export const metadata = SiteMeta
+export const viewport = SiteViewport // 👈 导出 Viewport
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${overpass.variable} font-sans`}>
-      <body className="dotback2 box-border flex min-h-[100dvh] flex-col bg-[#F5F5F7] tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal">
-        {children}
+    <html lang="en" className={`${overpass.variable} font-sans`} suppressHydrationWarning>
+      <body className="dotback2 box-border flex min-h-[100dvh] flex-col bg-[#F5F5F7] tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal dark:bg-[#0d1117] dark:text-gray-100">
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   )
