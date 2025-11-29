@@ -1,7 +1,7 @@
-import { SiteMeta, SiteViewport } from './components/siteMeta' // 👈 引入 Viewport
+import { SiteMeta, SiteViewport } from './components/siteMeta'
 import './globals.css'
 import Footer from './components/Footer'
-import { Providers } from './components/Providers' // 👈 引入 Provider
+import { Providers } from './components/Providers'
 
 // 修复 FontAwesome
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -17,12 +17,12 @@ const overpass = Overpass({
 })
 
 export const metadata = SiteMeta
-export const viewport = SiteViewport // 👈 导出 Viewport
+export const viewport = SiteViewport
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${overpass.variable} font-sans`} suppressHydrationWarning>
-      <body className="dotback2 box-border flex min-h-[100dvh] flex-col bg-[#F5F5F7] tracking-tight antialiased selection:bg-sky-600/20 md:tracking-normal dark:bg-[#0d1117] dark:text-gray-100">
+      <body className="dotback2 box-border flex min-h-[100dvh] flex-col bg-[#F5F5F7] tracking-tight antialiased selection:bg-sky-600/20 dark:bg-[#0d1117] dark:text-gray-100 md:tracking-normal">
         <Providers>
           {children}
           <Footer />

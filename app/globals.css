@@ -2,10 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ✅ 核心修复 1：告诉浏览器默认支持深色模式 */
+/* 这会让浏览器在加载 CSS 之前就把画布背景设为黑色，彻底消除白屏闪烁 */
+:root {
+  color-scheme: light dark;
+}
+
+/* ✅ 核心修复 2：防止加载时的样式闪烁 */
+/* 在 next-themes 注入主题属性之前，禁用所有过渡动画 */
+:root:not([data-theme]) * {
+  transition: none !important;
+}
+
 @layer base {
   a,
   Link {
-    /* 建议：给颜色变化指定 transition-colors 而不是 all，性能更好且不易闪烁 */
     @apply border-b border-zinc-300/50 text-inherit no-underline transition-colors duration-100 hover:border-zinc-400/90 dark:border-zinc-700/50 dark:hover:border-zinc-500;
   }
   p,
@@ -20,10 +31,4 @@
 }
 .dark .dotback2 {
   background-image: radial-gradient(#1f2937 1px, transparent 1px);
-}
-
-/* ✅ 新增：全局防闪烁补丁 */
-/* 这一段会确保在 next-themes 加载完成前，所有元素的过渡动画都被禁用 */
-:root:not([data-theme]) * {
-  transition: none !important;
 }
