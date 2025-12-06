@@ -29,7 +29,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@next/eslint-plugin-next": "^16.0.5",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^20.19.25",
+    "@types/node": "^24.10.1",
     "@types/react": "^18.3.27",
     "@types/react-dom": "^18.3.7",
     "@typescript-eslint/eslint-plugin": "^8.48.0",
