@@ -2,8 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":disableDependencyDashboard"],
   "enabledManagers": ["npm"],
-  "schedule": ["before 8am on Sunday"],
   "timezone": "Asia/Shanghai",
+  "schedule": ["before 8am on Sunday"], 
+  
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "schedule": [],      
+    "groupName": null    
+  },
+
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
@@ -13,6 +20,6 @@
   ],
   "rangeStrategy": "bump",
   "postUpdateOptions": ["pnpmDedupe"],
-  "prConcurrentLimit": 2,
-  "prHourlyLimit": 2
+  "prConcurrentLimit": 5, 
+  "prHourlyLimit": 0      
 }
