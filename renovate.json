@@ -1,14 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":disableDependencyDashboard"],
+  "extends": ["config:base"],
   "enabledManagers": ["npm"],
   "timezone": "Asia/Shanghai",
-  "schedule": ["before 8am on Sunday"], 
-  
+  "schedule": ["before 8am on Sunday"],
+
   "vulnerabilityAlerts": {
     "enabled": true,
-    "schedule": [],      
-    "groupName": null    
+    "schedule": [],
+    "groupName": null
   },
 
   "packageRules": [
@@ -16,10 +16,25 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
+    },
+    // 🛡️ 锁定核心架构：禁止自动升级到 Next.js 15/16
+    {
+      "matchPackageNames": ["next"],
+      "allowedVersions": "<15.0.0"
+    },
+    // 🛡️ 锁定底层引擎：禁止自动升级到 React 19
+    {
+      "matchPackageNames": ["react", "react-dom"],
+      "allowedVersions": "<19.0.0"
+    },
+    // 🛡️ 锁定样式引擎：禁止自动升级到 Tailwind CSS v4 及其配套插件
+    {
+      "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
+      "allowedVersions": "<4.0.0"
     }
   ],
   "rangeStrategy": "bump",
   "postUpdateOptions": ["pnpmDedupe"],
-  "prConcurrentLimit": 5, 
-  "prHourlyLimit": 0      
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 0
 }
