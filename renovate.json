@@ -17,15 +17,15 @@
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     },
-    // 🛡️ 锁定核心架构：禁止自动升级到 Next.js 15/16
+    // 🛡️ 锁定核心架构：允许 Next.js 16 内部更新，禁止自动升级到 17
     {
       "matchPackageNames": ["next"],
-      "allowedVersions": "<15.0.0"
+      "allowedVersions": "<17.0.0"
     },
-    // 🛡️ 锁定底层引擎：禁止自动升级到 React 19
+    // 🛡️ 锁定底层引擎：允许 React 19 内部更新，禁止自动升级到 20
     {
       "matchPackageNames": ["react", "react-dom"],
-      "allowedVersions": "<19.0.0"
+      "allowedVersions": "<20.0.0"
     },
     // 🛡️ 锁定样式引擎：禁止自动升级到 Tailwind CSS v4 及其配套插件
     {
