@@ -55,7 +55,7 @@
   "pnpm": {
     "overrides": {
       "glob": ">=13.0.5",
-      "brace-expansion": ">=4.0.1",
+      "brace-expansion": ">=5.0.2",
       "array-includes": "npm:@nolyfill/array-includes@latest",
       "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@latest",
       "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
