@@ -26,20 +26,20 @@
     "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/eslintrc": "^3.3.4",
     "@next/eslint-plugin-next": "^16.1.6",
     "@tailwindcss/typography": "^0.5.19",
-    "@types/node": "^24.10.13",
+    "@types/node": "^24.11.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
-    "eslint": "10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "10.0.2",
     "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "5.5.5",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
+    "lint-staged": "^16.3.1",
     "prettier": "3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "^5.9.3"
@@ -55,7 +55,7 @@
   "pnpm": {
     "overrides": {
       "glob": ">=13.0.6",
-      "brace-expansion": ">=5.0.2",
+      "brace-expansion": ">=5.0.4",
       "array-includes": "npm:@nolyfill/array-includes@latest",
       "array.prototype.findlastindex": "npm:@nolyfill/array.prototype.findlastindex@latest",
       "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
