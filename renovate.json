@@ -1,15 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "enabledManagers": ["npm"],
+  // 1. 允许 pnpm 运行，或者直接删除此行让 bot 自动检测
+  "enabledManagers": ["npm", "pnpm"], 
   "timezone": "Asia/Shanghai",
   "schedule": ["before 8am on Sunday"],
 
   "vulnerabilityAlerts": {
     "enabled": true,
-    "schedule": [],
-    "groupName": null
+    // 2. 改为 null，确保安全更新不受周日时间的限制
+    "schedule": null 
   },
+  
+  // 3. 允许自动修复深层传递依赖的漏洞
+  "transitiveRemediation": true,
 
   "packageRules": [
     {
@@ -17,17 +21,14 @@
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     },
-    // 🛡️ 锁定核心架构：允许 Next.js 16 内部更新，禁止自动升级到 17
     {
       "matchPackageNames": ["next"],
       "allowedVersions": "<17.0.0"
     },
-    // 🛡️ 锁定底层引擎：允许 React 19 内部更新，禁止自动升级到 20
     {
       "matchPackageNames": ["react", "react-dom"],
       "allowedVersions": "<20.0.0"
     },
-    // 🛡️ 锁定样式引擎：禁止自动升级到 Tailwind CSS v4 及其配套插件
     {
       "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
       "allowedVersions": "<4.0.0"
