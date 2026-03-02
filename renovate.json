@@ -1,45 +1,34 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  // 1. 允许 pnpm 管理器运行，修复 "undefined" 错误并支持 pnpm-lock.yaml
-  "enabledManagers": ["npm", "pnpm"],
   "timezone": "Asia/Shanghai",
   "schedule": ["before 8am on Sunday"],
-
   "vulnerabilityAlerts": {
     "enabled": true,
-    // 2. 将空数组改为 null，确保安全更新不受周日时间限制，发现即推送
     "schedule": null,
     "groupName": null
   },
-
-  // 3. 开启传递依赖修复，允许 Bot 自动升级像 minimatch 这样隐藏在深层的包
   "transitiveRemediation": true,
-
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     },
-    // 🛡️ 锁定核心架构：允许 Next.js 16 内部更新，禁止自动升级到 17
     {
       "matchPackageNames": ["next"],
       "allowedVersions": "<17.0.0"
     },
-    // 🛡️ 锁定底层引擎：允许 React 19 内部更新，禁止自动升级到 20
     {
       "matchPackageNames": ["react", "react-dom"],
       "allowedVersions": "<20.0.0"
     },
-    // 🛡️ 锁定样式引擎：禁止自动升级到 Tailwind CSS v4 及其配套插件
     {
       "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
       "allowedVersions": "<4.0.0"
     }
   ],
   "rangeStrategy": "bump",
-  // 4. pnpmDedupe 现在可以配合 pnpm 管理器正常工作了
   "postUpdateOptions": ["pnpmDedupe"],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 0
