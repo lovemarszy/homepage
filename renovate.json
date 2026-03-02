@@ -1,14 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
+  "enabledManagers": ["pnpm", "npm"], 
   "timezone": "Asia/Shanghai",
   "schedule": ["before 8am on Sunday"],
   "vulnerabilityAlerts": {
     "enabled": true,
-    "schedule": null,
-    "groupName": null
+    "schedule": null 
   },
-  "transitiveRemediation": true,
+  "transitiveRemediation": true, 
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
