@@ -71,7 +71,10 @@
       "object.hasown": "npm:@nolyfill/object.hasown@latest",
       "object.values": "npm:@nolyfill/object.values@latest",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest",
-      "flatted": ">=3.4.2"
+      "flatted": ">=3.4.2",
+      "picomatch@2": ">=2.3.2",
+      "picomatch@4": ">=4.0.4",
+      "yaml": ">=2.8.3"
     }
   }
 }
