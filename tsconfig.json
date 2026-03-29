@@ -26,18 +26,9 @@
     "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
     "listFiles": false /* Print names of files part of the compilation. */,
     "pretty": true /* Stylize errors and messages using color and context. */,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "types": [
-      "node"
-    ],
-    "typeRoots": [
-      "./node_modules/@types",
-      "./types"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     /* For Next.js */
@@ -51,23 +42,12 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".",
     "paths": {
-      "#components/*": [
-        "app/components/*"
-      ],
-      "#images/*": [
-        "public/images/*"
-      ],
-      "#photography/*": [
-        "public/images/photography/*"
-      ],
-      "#commission/*": [
-        "components/commission/*"
-      ],
-      "#data/*": [
-        "data/*"
-      ]
+      "#components/*": ["./app/components/*"],
+      "#images/*": ["./public/images/*"],
+      "#photography/*": ["./public/images/photography/*"],
+      "#commission/*": ["./components/commission/*"],
+      "#data/*": ["./data/*"]
     }
   },
   "include": [
@@ -77,7 +57,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
