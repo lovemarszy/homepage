@@ -32,9 +32,9 @@
     "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@typescript-eslint/eslint-plugin": "^8.59.1",
-    "@typescript-eslint/parser": "^8.59.1",
-    "eslint": "10.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
+    "eslint": "10.3.0",
     "eslint-config-next": "16.2.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "5.5.5",
@@ -74,7 +74,7 @@
       "flatted": ">=3.4.2",
       "picomatch@2": ">=4.0.4",
       "picomatch@4": ">=4.0.4",
-      "yaml": ">=2.8.3"
+      "yaml": ">=2.8.4"
     }
   }
 }
