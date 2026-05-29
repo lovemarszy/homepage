@@ -3,6 +3,7 @@
   "extends": ["config:base"],
   "timezone": "Asia/Shanghai",
   "schedule": ["before 8am on Sunday"],
+  "minimumReleaseAge": "3 days",
   "vulnerabilityAlerts": {
     "enabled": true,
     "schedule": null,
