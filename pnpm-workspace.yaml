@@ -24,6 +24,7 @@ overrides:
   "picomatch@2": ">=4.0.4"
   "picomatch@4": ">=4.0.4"
   "yaml": ">=2.9.0"
+  "postcss": "^8.5.14"
 
 # 请确保底部的这一块被正确修改为 true
 allowBuilds:
