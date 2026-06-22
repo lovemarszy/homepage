@@ -2,7 +2,6 @@ packages:
   - "."
 
 overrides:
-  "postcss": ">=8.5.10"
   "cross-spawn": ">=7.0.6"
   "minimatch": ">=10.2.5"
   "glob": ">=13.0.6"
