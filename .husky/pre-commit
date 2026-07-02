@@ -1,4 +1,1 @@
-
-
-pnpm i
 pnpm lint-staged
