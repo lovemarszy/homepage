@@ -1,21 +1,17 @@
-import { dirname } from 'path'
-import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals'
+import nextTypescript from 'eslint-config-next/typescript'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-})
-
-const eslintConfig = [
-  // 1. 显式忽略不需要检查的文件夹 (这能解决很多奇怪的报错)
+const eslintConfig = defineConfig([
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   {
-    ignores: ['.next/**', 'node_modules/**'],
+    files: ['*.config.js', '*.config.mjs', '*.config.ts', 'next.config.js'],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
+    },
   },
-  // 2. 引入 Next.js 核心配置
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
-]
+  globalIgnores(['.next/**', 'node_modules/**']),
+])
 
 export default eslintConfig

@@ -13,19 +13,45 @@
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch"
+      "groupName": "other non-major dependencies",
+      "groupSlug": "other-minor-patch"
     },
     {
-      "matchPackageNames": ["next"],
+      "matchPackageNames": ["next", "@next/bundle-analyzer"],
+      "groupName": "Next.js",
+      "groupSlug": "nextjs",
       "allowedVersions": "<17.0.0"
     },
     {
       "matchPackageNames": ["react", "react-dom"],
+      "groupName": "React",
+      "groupSlug": "react",
       "allowedVersions": "<20.0.0"
     },
     {
+      "matchPackageNames": ["eslint"],
+      "allowedVersions": "<10.0.0"
+    },
+    {
+      "matchPackageNames": [
+        "eslint",
+        "eslint-config-next",
+        "eslint-config-prettier",
+        "eslint-plugin-prettier",
+        "@next/eslint-plugin-next",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "typescript",
+        "prettier",
+        "prettier-plugin-tailwindcss"
+      ],
+      "groupName": "linting and TypeScript",
+      "groupSlug": "linting-typescript"
+    },
+    {
       "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
+      "groupName": "Tailwind CSS",
+      "groupSlug": "tailwindcss",
       "allowedVersions": "<4.0.0"
     }
   ],
