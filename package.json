@@ -2,7 +2,7 @@
   "name": "loveur.life",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@11.9.0",
+  "packageManager": "pnpm@11.10.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +18,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.3.0",
     "@fortawesome/free-brands-svg-icons": "^7.3.0",
     "@fortawesome/free-solid-svg-icons": "^7.3.0",
-    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@fortawesome/react-fontawesome": "^3.4.0",
     "@next/bundle-analyzer": "^16.2.10",
     "autoprefixer": "^10.5.0",
     "next": "^16.2.10",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@next/eslint-plugin-next": "^16.2.10",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^24.13.2",
+    "@types/node": "^24.13.3",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.62.1",
