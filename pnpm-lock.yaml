@@ -5,8 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  next>postcss: 8.5.16
-  minimatch@10>brace-expansion: 5.0.7
+  next>postcss: '>=8.5.10'
 
 importers:
 

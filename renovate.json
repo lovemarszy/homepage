@@ -16,18 +16,21 @@
       "groupName": "other non-major dependencies",
       "groupSlug": "other-minor-patch"
     },
+    // Next.js 17 requires a dedicated migration and compatibility review.
     {
       "matchPackageNames": ["next", "@next/bundle-analyzer"],
       "groupName": "Next.js",
       "groupSlug": "nextjs",
       "allowedVersions": "<17.0.0"
     },
+    // React 20 requires a dedicated migration and compatibility review.
     {
       "matchPackageNames": ["react", "react-dom"],
       "groupName": "React",
       "groupSlug": "react",
       "allowedVersions": "<20.0.0"
     },
+    // ESLint 10 currently breaks linting with eslint-plugin-react 7.37.5.
     {
       "matchPackageNames": ["eslint"],
       "allowedVersions": "<10.0.0"
@@ -48,6 +51,7 @@
       "groupName": "linting and TypeScript",
       "groupSlug": "linting-typescript"
     },
+    // Tailwind CSS 4 needs a separate migration after the previous Vercel build failure.
     {
       "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
       "groupName": "Tailwind CSS",
