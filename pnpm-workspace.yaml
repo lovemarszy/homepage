@@ -6,7 +6,7 @@ minimumReleaseAge: 4320
 # Next.js 16 bundles a vulnerable PostCSS release; keep its transitive dependency patched.
 overrides:
   "next>postcss": ">=8.5.18"
-  "next>sharp": ">=0.35.0"
+  "next>sharp": ">=0.35.3"
 
 allowBuilds:
   sharp: true
