@@ -10,7 +10,7 @@ overrides:
   "postcss>source-map-js": "^1.2.2"
   # Security fix for quadratic selector parsing; verify Tailwind CSS output on upgrades.
   "postcss-selector-parser": "^7.1.6"
-  "@eslint/eslintrc>js-yaml": "^4.3.2"
+  "@eslint/eslintrc>js-yaml": "^5.4.3"
   "postcss>nanoid": "^3.3.19"
   "browserslist": ">=4.29.0"
   "baseline-browser-mapping": ">=2.11.25"
