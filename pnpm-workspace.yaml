@@ -6,7 +6,10 @@ minimumReleaseAge: 4320
 # Next.js 16 bundles a vulnerable PostCSS release; keep its transitive dependency patched.
 overrides:
   "next>postcss": ">=8.5.23"
-  "next>sharp": ">=0.35.4"
+  "next>sharp": ">=0.35.5"
+  "postcss>source-map-js": "^1.2.2"
+  # Security fix for quadratic selector parsing; verify Tailwind CSS output on upgrades.
+  "postcss-selector-parser": "^7.1.6"
   "@eslint/eslintrc>js-yaml": "^4.3.2"
   "postcss>nanoid": "^3.3.19"
   "browserslist": ">=4.29.0"
