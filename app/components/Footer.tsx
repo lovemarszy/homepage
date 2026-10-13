@@ -12,12 +12,8 @@ const Footer = () => {
           Aozaki
         </a>
       </div>
-      <div className="mb-1 text-[#606060] dark:text-zinc-400">
-        Built by Marszy
-      </div>
-      <div className="text-[#606060] dark:text-zinc-400">
-        ©️ 2023 - {new Date().getFullYear()}
-      </div>
+      <div className="mb-1 text-[#606060] dark:text-zinc-400">Built by Marszy</div>
+      <div className="text-[#606060] dark:text-zinc-400">©️ 2023 - {new Date().getFullYear()}</div>
     </footer>
   )
 }

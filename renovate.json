@@ -6,7 +6,7 @@
   "minimumReleaseAge": "3 days",
   "vulnerabilityAlerts": {
     "enabled": true,
-    "schedule": null,
+    "schedule": [],
     "groupName": null
   },
   "transitiveRemediation": true,
@@ -18,7 +18,7 @@
     },
     // Next.js 17 requires a dedicated migration and compatibility review.
     {
-      "matchPackageNames": ["next", "@next/bundle-analyzer"],
+      "matchPackageNames": ["next", "eslint-config-next"],
       "groupName": "Next.js",
       "groupSlug": "nextjs",
       "allowedVersions": "<17.0.0"
@@ -36,27 +36,41 @@
       "allowedVersions": "<10.0.0"
     },
     {
-      "matchPackageNames": [
-        "eslint",
-        "eslint-config-next",
-        "eslint-config-prettier",
-        "eslint-plugin-prettier",
-        "@next/eslint-plugin-next",
-        "@typescript-eslint/eslint-plugin",
-        "@typescript-eslint/parser",
-        "typescript",
-        "prettier",
-        "prettier-plugin-tailwindcss"
-      ],
+      "matchPackageNames": ["eslint", "typescript", "prettier", "prettier-plugin-tailwindcss"],
       "groupName": "linting and TypeScript",
       "groupSlug": "linting-typescript"
     },
     // Tailwind CSS 4 needs a separate migration after the previous Vercel build failure.
     {
-      "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer", "@tailwindcss/typography"],
+      "matchPackageNames": ["tailwindcss", "postcss", "autoprefixer"],
       "groupName": "Tailwind CSS",
-      "groupSlug": "tailwindcss",
+      "groupSlug": "tailwindcss"
+    },
+    {
+      "matchPackageNames": ["tailwindcss"],
       "allowedVersions": "<4.0.0"
+    },
+    // Stay inside the TypeScript range supported by typescript-eslint.
+    {
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<6.1.0"
+    },
+    // These overrides patch dependencies of older callers; do not cross majors.
+    {
+      "matchDepNames": ["@eslint/eslintrc>js-yaml"],
+      "allowedVersions": "<5.0.0"
+    },
+    {
+      "matchDepNames": ["minimatch@3>brace-expansion"],
+      "allowedVersions": "<2.0.0"
+    },
+    {
+      "matchPackageNames": ["node"],
+      "allowedVersions": "24.x"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions"
     }
   ],
   "rangeStrategy": "bump",

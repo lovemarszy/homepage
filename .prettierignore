@@ -1,7 +1,7 @@
 # Ignore artifacts:
 .next
-.github
-.contentlayer
 pnpm-lock.yaml
-
 .turbo
+playwright-report
+test-results
+AGENTS.md

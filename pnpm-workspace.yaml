@@ -1,29 +1,22 @@
 packages:
-  - "."
+  - '.'
 
 minimumReleaseAge: 4320
 
-# Next.js 16 bundles a vulnerable PostCSS release; keep its transitive dependency patched.
+# Keep security floors within the caller's compatible major version.
+# Review/remove each override when upstream and the lockfile satisfy the floor.
 overrides:
-  "next>postcss": ">=8.5.23"
-  "next>sharp": ">=0.35.5"
-  "postcss>source-map-js": "^1.2.2"
+  'next>sharp': '^0.35.5'
+  'postcss>source-map-js': '^1.2.2'
   # Security fix for quadratic selector parsing; verify Tailwind CSS output on upgrades.
-  "postcss-selector-parser": "^7.1.6"
-  "@eslint/eslintrc>js-yaml": "^4.3.2"
-  "postcss>nanoid": "^3.3.19"
-  "browserslist": ">=4.29.0"
-  "baseline-browser-mapping": ">=2.11.25"
-  "minimatch@3>brace-expansion": "^1.1.21"
-  "minimatch@10>brace-expansion": "^5.0.12"
+  'postcss-selector-parser': '^7.1.6'
+  '@eslint/eslintrc>js-yaml': '^4.3.2'
+  'postcss>nanoid': '^3.3.19'
+  'browserslist': '^4.29.0'
+  'baseline-browser-mapping': '^2.11.25'
+  'minimatch@3>brace-expansion': '^1.1.21'
+  'minimatch@10>brace-expansion': '^5.0.12'
 
 allowBuilds:
   sharp: true
   unrs-resolver: true
-
-minimumReleaseAgeExclude:
-  - ws@7.5.11
-  - js-yaml@4.1.2
-  - '@babel/core@7.29.1'
-  # Renovate security update: nanoid@3.3.18
-  - nanoid@3.3.18

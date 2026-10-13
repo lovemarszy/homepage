@@ -3,16 +3,16 @@ import './globals.css'
 import Footer from './components/Footer'
 import { Providers } from './components/Providers'
 
-// 修复 FontAwesome
+// Load icon styles once, without injecting CSS from client JavaScript.
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
-import { Overpass } from 'next/font/google'
-const overpass = Overpass({
-  subsets: ['latin'],
+import localFont from 'next/font/local'
+const overpass = localFont({
+  src: './fonts/overpass-latin.woff2',
   variable: '--font-overpass',
-  weight: ['400', '500', '800'],
+  weight: '100 900',
   display: 'swap',
 })
 

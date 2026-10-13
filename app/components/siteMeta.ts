@@ -1,4 +1,4 @@
-import { Metadata, Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 const Site = 'Marszy'
 const Description = "Marszy's Profile"
@@ -9,6 +9,8 @@ export const SiteMeta: Metadata = {
   metadataBase: new URL(CanonicalUrl),
   title: Site,
   description: Description,
+  alternates: { canonical: '/' },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: Site,
     siteName: Site,
@@ -23,11 +25,9 @@ export const SiteMeta: Metadata = {
   },
   applicationName: Site,
   icons: {
-    icon: [{ url: '/favicon.ico' }, new URL('/favicon.ico', CanonicalUrl)],
+    icon: '/favicon.ico',
     shortcut: ['/android-chrome-192x192.png'],
-    apple: [
-      { url: '/apple-touch-icon.png' },
-    ],
+    apple: '/apple-touch-icon.png',
   },
 }
 

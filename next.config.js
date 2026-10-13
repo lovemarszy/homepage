@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
 const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'X-Frame-Options', value: 'DENY' },
@@ -23,10 +19,16 @@ const nextConfig = {
       },
     ],
   },
-  // ❌ 注意：eslint 字段已经被彻底删除了
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }]
   },
+  async redirects() {
+    return [
+      { source: '/blog', destination: 'https://blog.loveur.life/', permanent: true },
+      { source: '/twitter', destination: 'https://twitter.com/Marszy_Official', permanent: true },
+      { source: '/github', destination: 'https://github.com/lovemarszy', permanent: true },
+    ]
+  },
 }
 
-module.exports = withBundleAnalyzer(nextConfig)
+module.exports = nextConfig

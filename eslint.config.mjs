@@ -11,7 +11,7 @@ const eslintConfig = defineConfig([
       '@typescript-eslint/no-require-imports': 'off',
     },
   },
-  globalIgnores(['.next/**', 'node_modules/**']),
+  globalIgnores(['.next/**', 'node_modules/**', 'playwright-report/**', 'test-results/**']),
 ])
 
 export default eslintConfig
