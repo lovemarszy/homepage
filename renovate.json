@@ -65,6 +65,10 @@
       "allowedVersions": "<2.0.0"
     },
     {
+      "matchDepNames": ["postcss>nanoid"],
+      "allowedVersions": "<4.0.0"
+    },
+    {
       "matchPackageNames": ["node"],
       "allowedVersions": "24.x",
       "rangeStrategy": "replace"
