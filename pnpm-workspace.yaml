@@ -13,9 +13,9 @@ overrides:
   '@eslint/eslintrc>js-yaml': '^4.3.2'
   'postcss>nanoid': '^3.3.20'
   'browserslist': '^4.29.5'
-  'baseline-browser-mapping': '^2.11.34'
+  'baseline-browser-mapping': '^2.11.35'
   # Security floor for ESLint's Zod 4 dependency (GHSA-mrhx-c7xc-m3w5).
-  'zod@4': '^4.6.6'
+  'zod@4': '^4.6.7'
   'minimatch@3>brace-expansion': '^1.1.21'
   'minimatch@10>brace-expansion': '^5.0.12'
 
